@@ -2,16 +2,25 @@
   "name": "aplicacion",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yohanderson.github.io/portfolio",
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "deploy": "^1.0.3",
+    "framer-motion": "^7.1.0",
+    "package": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-visibility-sensor": "^5.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run deploy",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +43,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   }
 }
